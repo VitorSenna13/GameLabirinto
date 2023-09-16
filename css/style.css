@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.notResolution {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: none;
+}
+
+.notResolution span {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+}
+
+.container {
+    background-image: url('../img/backgroundGame.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.containerModal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5);
+}
+
+.container .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    background-color: #181818;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.container .containerModal .modal span {
+    margin-bottom: 45px;
+    font-size: 20px;
+}
+
+.container .modal .optionResposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.container .modal .optionResposta button {
+    width: 300px;
+    height: 70px;
+    border: none;
+    font-size: 15px;
+    margin: 5px;
+    background-color: rgb(24, 24, 216);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.container .modal .optionResposta button:hover {
+    background-color: rgb(8, 8, 194);
+}
+
+.containerModalFim {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5);
+}
+
+.container .modalFim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    background-color: #181818;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.container .containerModalFim .modalFim span {
+    margin-bottom: 45px;
+    font-size: 30px;
+}
+
+.container .containerModalFim .modalFim button {
+    width: 300px;
+    height: 70px;
+    border: none;
+    font-size: 20px;
+    margin: 5px;
+    background-color: rgb(24, 24, 216);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.container .modalFim button:hover {
+    background-color: rgb(8, 8, 194);
+}
+
+.modalActive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 734px) {
+    .container {
+        display: none;
+    }
+
+    .notResolution {
+        display: flex;
+    }
+}

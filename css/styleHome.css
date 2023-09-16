@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ViaLab;
+    src: url('../fonts/TechnoRaceItalic-eZRWe.otf');
+}
+
+@font-face {
+    font-family: GameLab;
+    src: url('../fonts/SpaceRacer-DOPlR.otf');
+}
+
+body {
+    background-color: #121212;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titleGame {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.titleGame .titlePrincipal {
+    font-size: 55px;
+    font-family: GameLab;
+    color: #fff;
+}
+
+.titleGame .titleSub {
+    font-size: 30px;
+    font-family: ViaLab;
+    color: rgb(192, 14, 14);
+}
+
+.container .optionGame {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.container .optionGame button {
+    margin: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(24, 24, 216);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.container .optionGame button:hover {
+    border: 2px solid;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 660px) {
+    .titleGame .titlePrincipal {
+        font-size: 35px;
+    }
+
+    .titleGame .titleSub {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .titleGame .titlePrincipal {
+        font-size: 25px;
+    }
+
+    .titleGame .titleSub {
+        font-size: 10px;
+    }
+}
