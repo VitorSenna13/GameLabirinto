@@ -1,19 +1,19 @@
 const widthWindow = window.innerWidth;
-const heightWindow = widthWindow.innerHeight;
+const heightWindow = window.innerHeight;
 const telaGame = document.querySelector('.container canvas');
 
 window.addEventListener('load', () => {
     if (widthWindow <= 1630 && widthWindow >= 1100) {
-        telaGame.style.width = widthWindow + 'px';
-        telaGame.style.height = '815px';
+        telaGame.style.width = (widthWindow - 25) + 'px';
+        telaGame.style.height = (heightWindow - 25) + 'px';
     }
     else if (widthWindow < 1100 && widthWindow >= 900) {
-        telaGame.style.width = widthWindow + 'px';
-        telaGame.style.height = '760px';
+        telaGame.style.width = (widthWindow - 25) + 'px';
+        telaGame.style.height = (heightWindow - 25) + 'px';
     }
     else if (widthWindow < 900 && widthWindow >= 735) {
-        telaGame.style.width = widthWindow + 'px';
-        telaGame.style.height = '620px';
+        telaGame.style.width = (widthWindow - 25) + 'px';
+        telaGame.style.height = (heightWindow - 25) + 'px';
     }
 })
 
@@ -32,14 +32,14 @@ window.addEventListener('load', () => {
 
         let questions = [];
 
-        let perguntas = ['Quais são as principais caracteristicas da xilogravura?', 'Quais são os materiais utilizados na xilogravura?', 'Qual foi o governo ditatorial apoiado por Assis Chateaubriand?', 'Os diários Associados são:', 'Qual dos seguintes elementos era frequentemente incluído nas atas romanas?',
+        const perguntas = ['Quais são as principais caracteristicas da xilogravura?', 'Quais são os materiais utilizados na xilogravura?', 'Qual foi o governo ditatorial apoiado por Assis Chateaubriand?', 'Os diários Associados são:', 'Qual dos seguintes elementos era frequentemente incluído nas atas romanas?',
             'Qual foi a primeira impressora a chegar no Brasil em 1808?', 'Qual dificuldade Assis Chateaubriand enfrentou na infância?', 'Qual a data que Assis Chateaubriand comprou o primeiro jornal e qual era o nome do jornal?',
             'Quais eram os temas abordados nas gazetas manuscritas?', 'Quem eram os principais leitores das gazetas manuscritas?'];
-
-        let respostas = ['C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'A) Tinta, rolo de tintagem, solvente, espátula, faquinha e talco.', 'A) Governo Vargas.',
+        
+        const respostas = ['C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'A) Tinta, rolo de tintagem, solvente, espátula, faquinha e talco.', 'A) Governo Vargas.',
             'D) Aglomerado de todas as mídias comunicativas.', 'C)  Resumos das discussões e debates ocorridos.', 'A) Imprensa Régia.', 'C) Gagueira.', 'D) 04/10/1924 - O Jornal.', 'D) Todas as opções anteriores.', 'D) Todas as opções anteriores.'];
-
-        let respostaOption = ['A) É uma técnica de impressão em metal.', 'B) É uma técnica de impressão em tecido.', 'C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'D) É uma técnica de impressão em vidro.',
+        
+        const respostaOption = ['A) É uma técnica de impressão em metal.', 'B) É uma técnica de impressão em tecido.', 'C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'D) É uma técnica de impressão em vidro.',
             'A) Tinta, rolo de tintagem, solvente, espátula, faquinha e talco.', 'B) Tinta, pincel, água e papel.', 'C) Tinta, carvão e papel.', 'D) Tinta, lápis e papel.',
             'A) Governo Vargas.', 'B) Governo de Jucelino Kubitschek.', 'C) Governo de Café Filho.', 'D) Governo de Jânio Quadros.',
             'A) Conjunto de jornais.', 'B) Conjunto de rádios.', 'C) Conjunto de canais televisivos.', 'D) Aglomerado de todas as mídias comunicativas.',
@@ -49,8 +49,7 @@ window.addEventListener('load', () => {
             'A) 06/10/1927 - A tribuna da Imprensa.', 'B) 15/08/1824 - O Globo.', 'C) 22/10/2022 - Jornal do Brasil.', 'D) 04/10/1924 - O Jornal.',
             'A) Política.', 'B) Religião.', 'C) Arte e cultura.', 'D) Todas as opções anteriores.',
             'A) Nobreza.', 'B) Mercadores.', 'C) Clérigos.', 'D) Todas as opções anteriores.'];
-
-
+            
         const tileSize = 48;
         const tileSrcSize = 96;
 

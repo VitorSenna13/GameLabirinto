@@ -1,5 +1,5 @@
-const buttonHome = document.querySelector('.container .optionGame button');
+const buttonGame = document.querySelector('.container .optionGame .game');
 
-buttonHome.addEventListener('click', ()=>{
+buttonGame.addEventListener('click', ()=>{
     window.location.href = './apresentPlayer.html';
 })
