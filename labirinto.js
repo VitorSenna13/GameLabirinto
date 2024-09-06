@@ -32,23 +32,23 @@ window.addEventListener('load', () => {
 
         let questions = [];
 
-        const perguntas = ['Quais são as principais caracteristicas da xilogravura?', 'Quais são os materiais utilizados na xilogravura?', 'Qual foi o governo ditatorial apoiado por Assis Chateaubriand?', 'Os diários Associados são:', 'Qual dos seguintes elementos era frequentemente incluído nas atas romanas?',
-            'Qual foi a primeira impressora a chegar no Brasil em 1808?', 'Qual dificuldade Assis Chateaubriand enfrentou na infância?', 'Qual a data que Assis Chateaubriand comprou o primeiro jornal e qual era o nome do jornal?',
-            'Quais eram os temas abordados nas gazetas manuscritas?', 'Quem eram os principais leitores das gazetas manuscritas?'];
+        const perguntas = ['Qual o artefato principal que Indiana Jones procura em "O Chamado do Destino"?', 'Qual é o nome do principal vilão no filme "O Chamado do Destino"?', 'Quem interpreta a afilhada de Indiana Jones, Helena, no filme?', 'Em que ano se passa a maior parte da história de "O Chamado do Destino"?', 'Qual evento histórico serve de pano de fundo para "O Chamado do Destino"?',
+            'Que grupo de antagonistas Indiana Jones enfrenta novamente em "O Chamado do Destino"?', 'Em que local histórico se encontra parte da ação do filme?', 'Qual é a profissão de Helena Shaw, afilhada de Indiana Jones?',
+            'Qual diretor assumiu a direção de "O Chamado do Destino"?', 'Qual é o papel do personagem interpretado por Antonio Banderas no filme?'];
         
-        const respostas = ['C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'A) Tinta, rolo de tintagem, solvente, espátula, faquinha e talco.', 'A) Governo Vargas.',
-            'D) Aglomerado de todas as mídias comunicativas.', 'C)  Resumos das discussões e debates ocorridos.', 'A) Imprensa Régia.', 'C) Gagueira.', 'D) 04/10/1924 - O Jornal.', 'D) Todas as opções anteriores.', 'D) Todas as opções anteriores.'];
+        const respostas = ['c) O Dial de Arquimedes', 'b) Mads Mikkelsen como Jürgen Voller', 'b) Phoebe Waller-Bridge',
+            'b) 1969', 'c) Corrida Espacial', 'b) Nazistas', 'c) Siracusa', 'b) Aventureira e mercadora de artefatos', 'b) James Mangold', 'b) Um antigo aliado de Indy'];
         
-        const respostaOption = ['A) É uma técnica de impressão em metal.', 'B) É uma técnica de impressão em tecido.', 'C) É uma técnica de impressão em madeira, onde se entalha na madeira a figura ou forma que se pretende imprimir.', 'D) É uma técnica de impressão em vidro.',
-            'A) Tinta, rolo de tintagem, solvente, espátula, faquinha e talco.', 'B) Tinta, pincel, água e papel.', 'C) Tinta, carvão e papel.', 'D) Tinta, lápis e papel.',
-            'A) Governo Vargas.', 'B) Governo de Jucelino Kubitschek.', 'C) Governo de Café Filho.', 'D) Governo de Jânio Quadros.',
-            'A) Conjunto de jornais.', 'B) Conjunto de rádios.', 'C) Conjunto de canais televisivos.', 'D) Aglomerado de todas as mídias comunicativas.',
-            'A) Ilustrações detalhadas dos participantes presentes.', 'B) Registros musicais das melodias entoadas durante as reuniões', 'C)  Resumos das discussões e debates ocorridos.', 'D) Códigos secretos para ocultar informações confidenciais.',
-            'A) Imprensa Régia.', 'B) Gazeta do Rio de Janeiro.', 'C) Correio Braziliense.', 'D) Gazeta de Pernambuco.',
-            'A) Cegueira.', 'B) Surdez.', 'C) Gagueira.', 'D) Deficiência Intelectual.',
-            'A) 06/10/1927 - A tribuna da Imprensa.', 'B) 15/08/1824 - O Globo.', 'C) 22/10/2022 - Jornal do Brasil.', 'D) 04/10/1924 - O Jornal.',
-            'A) Política.', 'B) Religião.', 'C) Arte e cultura.', 'D) Todas as opções anteriores.',
-            'A) Nobreza.', 'B) Mercadores.', 'C) Clérigos.', 'D) Todas as opções anteriores.'];
+        const respostaOption = ['a) A Arca da Aliança', 'b) O Cálice Sagrado', 'c) O Dial de Arquimedes', 'd) O Coração de Shiva',
+            'a) Dr. René Belloq', 'b) Mads Mikkelsen como Jürgen Voller', 'c) Irina Spalko', 'd) Walter Donovan',
+            'a) Cate Blanchett', 'b) Phoebe Waller-Bridge', 'c) Karen Allen', 'd) Shia LaBeouf',
+            'a) 1944', 'b) 1969', 'c) 1957', 'd) 1936',
+            'a) Segunda Guerra Mundial', 'b) Guerra Fria', 'c) Corrida Espacial', 'd) Guerra do Vietnã',
+            'a) Soviéticos', 'b) Nazistas', 'c) Culto de Thuggee', 'd) Aliens',
+            'a) Roma', 'b) Atenas', 'c) Siracusa', 'd) Machu Picchu',
+            'a) Professora universitária', 'b) Aventureira e mercadora de artefatos', 'c) Arqueóloga', 'd) Agente do governo',
+            'a) Steven Spielberg', 'b) James Mangold', 'c) George Lucas', 'd) J.J. Abrams',
+            'a) Vilão principal', 'b) Um antigo aliado de Indy', 'c) Um oficial militar', 'd) Um arqueólogo rival'];
             
         const tileSize = 48;
         const tileSrcSize = 96;
