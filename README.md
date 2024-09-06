@@ -13,7 +13,7 @@
   em direção a saida. Caso algum jogador responda de forma incorreta alguma das perguntas, ele rapidamente passa a vez para o próximo jogador.
 </p>
 
-**_O game é jogado com no minimo três Jogadores._**
+**_Essa gamificação precisa de no minimo três Jogadores._**
 
 </br>
 
